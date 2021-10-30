@@ -1,0 +1,16 @@
+C:\Documents and Settings\Macoratti\Configurações locais\Dados de aplicativos\Temporary Projects\acessoBD_incluir\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Macoratti\Configurações locais\Dados de aplicativos\Temporary Projects\acessoBD_incluir\obj\Release\acessoBD_incluir.Form1.resources
+C:\Documents and Settings\Macoratti\Configurações locais\Dados de aplicativos\Temporary Projects\acessoBD_incluir\obj\Release\acessoBD_incluir.Properties.Resources.resources
+C:\Documents and Settings\Macoratti\Configurações locais\Dados de aplicativos\Temporary Projects\acessoBD_incluir\obj\Release\acessoBD_incluir.csproj.GenerateResource.Cache
+C:\Documents and Settings\Macoratti\Meus documentos\Visual Studio 2008\Projects\acessoBD_incluir\acessoBD_incluir\obj\Release\ResolveAssemblyReference.cache
+C:\Documents and Settings\Macoratti\Meus documentos\Visual Studio 2008\Projects\acessoBD_incluir\acessoBD_incluir\obj\Release\acessoBD_incluir.Form1.resources
+C:\Documents and Settings\Macoratti\Meus documentos\Visual Studio 2008\Projects\acessoBD_incluir\acessoBD_incluir\obj\Release\acessoBD_incluir.Form2.resources
+C:\Documents and Settings\Macoratti\Meus documentos\Visual Studio 2008\Projects\acessoBD_incluir\acessoBD_incluir\obj\Release\acessoBD_incluir.Properties.Resources.resources
+C:\Documents and Settings\Macoratti\Meus documentos\Visual Studio 2008\Projects\acessoBD_incluir\acessoBD_incluir\obj\Release\acessoBD_incluir.csproj.GenerateResource.Cache
+C:\Documents and Settings\Macoratti\Meus documentos\Visual Studio 2008\Projects\acessoBD_incluir\acessoBD_incluir\bin\Release\acessoBD_incluir.exe
+C:\Documents and Settings\Macoratti\Meus documentos\Visual Studio 2008\Projects\acessoBD_incluir\acessoBD_incluir\bin\Release\acessoBD_incluir.pdb
+C:\Documents and Settings\Macoratti\Meus documentos\Visual Studio 2008\Projects\acessoBD_incluir\acessoBD_incluir\obj\Release\acessoBD_incluir.exe
+C:\Documents and Settings\Macoratti\Meus documentos\Visual Studio 2008\Projects\acessoBD_incluir\acessoBD_incluir\obj\Release\acessoBD_incluir.pdb
+C:\Documents and Settings\Macoratti\Meus documentos\Visual Studio 2008\Projects\acessoBD_incluir\acessoBD_incluir\obj\Release\acessoBD_incluir.Form3.resources
+C:\Documents and Settings\Macoratti\Meus documentos\Visual Studio 2008\Projects\acessoBD_incluir\acessoBD_incluir\obj\Release\acessoBD_incluir.Form4.resources
+C:\Documents and Settings\Macoratti\Meus documentos\Visual Studio 2008\Projects\acessoBD_incluir\acessoBD_incluir\obj\Release\acessoBD_incluir.Form5.resources

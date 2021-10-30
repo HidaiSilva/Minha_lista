@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="Sample">
+</Property><Property Name="Solution File" Value="E:\Banco de dados\TresCamadas\sample\Sample\Sample.sln">
+</Property><Property Name="User Options File" Value="E:\Banco de dados\TresCamadas\sample\Sample\Sample.suo">
+</Property><Property Name="Date" Value="quinta-feira, 17 de maio de 2012">
+</Property><Property Name="Time" Value="11:02">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="Sample.sln" Description="File successfully backed up as E:\Banco de dados\TresCamadas\sample\Sample\Backup\Sample.sln">
+</Event><Event ErrorLevel="0" Project="" Source="Sample.suo" Description="File successfully backed up as E:\Banco de dados\TresCamadas\sample\Sample\Backup\Sample.suo">
+</Event><Event ErrorLevel="0" Project="TresCamadas" Source="TresCamadas.csproj" Description="Project file successfully backed up as E:\Banco de dados\TresCamadas\sample\Sample\Backup\TresCamadas.csproj">
+</Event><Event ErrorLevel="0" Project="TresCamadas" Source="TresCamadas.csproj.user" Description="Project user file successfully backed up as E:\Banco de dados\TresCamadas\sample\Sample\Backup\TresCamadas.csproj.user">
+</Event><Event ErrorLevel="0" Project="TresCamadas" Source="AssemblyInfo.cs" Description="File successfully backed up as E:\Banco de dados\TresCamadas\sample\Sample\Backup\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="TresCamadas" Source="AlunosBD.cs" Description="File successfully backed up as E:\Banco de dados\TresCamadas\sample\Sample\Backup\AlunosBD.cs">
+</Event><Event ErrorLevel="0" Project="TresCamadas" Source="Alunos.cs" Description="File successfully backed up as E:\Banco de dados\TresCamadas\sample\Sample\Backup\Alunos.cs">
+</Event><Event ErrorLevel="0" Project="TresCamadas" Source="Form1.cs" Description="File successfully backed up as E:\Banco de dados\TresCamadas\sample\Sample\Backup\Form1.cs">
+</Event><Event ErrorLevel="0" Project="TresCamadas" Source="App.config" Description="File successfully backed up as E:\Banco de dados\TresCamadas\sample\Sample\Backup\App.config">
+</Event><Event ErrorLevel="0" Project="TresCamadas" Source="App.ico" Description="File successfully backed up as E:\Banco de dados\TresCamadas\sample\Sample\Backup\App.ico">
+</Event><Event ErrorLevel="0" Project="TresCamadas" Source="Form1.resx" Description="File successfully backed up as E:\Banco de dados\TresCamadas\sample\Sample\Backup\Form1.resx">
+</Event><Event ErrorLevel="1" Project="TresCamadas" Source="TresCamadas.csproj" Description="Your project is targeting .NET Framework 2.0 or 3.0. If your project uses assemblies requiring a newer .NET Framework, your project will fail to build. You can change the .NET Framework version by clicking Properties on the project menu and then selecting a new version in the '.NET Framework' dropdown box. (In Visual Basic, this is located on the Compile tab by clicking the 'Advanced Compiler Options...' button.)">
+</Event><Event ErrorLevel="0" Project="TresCamadas" Source="TresCamadas.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="TresCamadas" Source="TresCamadas.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="Sample.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="Sample.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="TresCamadas" Source="TresCamadas.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

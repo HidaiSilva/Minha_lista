@@ -1,0 +1,123 @@
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\bin\Debug\MinhaLista.exe
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\bin\Debug\MinhaLista.pdb
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.Properties.Resources.resources
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.exe
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.pdb
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.MinhaLista.resources
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.NovoUsuario.resources
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.VerCliente.resources
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.HistóricoPedido.resources
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.PedidoPendente.resources
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.VisualizarHistoricoPedido.resources
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.VisualizarPedido.resources
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\bin\Debug\MinhaLista.exe.config
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.AlterarFornecedorResponsavel.resources
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.AlterarUsuario.resources
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.ExcluirUsuario.resources
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.ExcluirFornecedorResponsavel.resources
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.NovoFornecedor_Responsavel.resources
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.AlterraProduto.resources
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.ExcluiProduto.resources
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.NovoProduto.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\bin\Debug\MinhaLista.exe.config
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.exe
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.pdb
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\bin\Debug\MinhaLista.exe
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\bin\Debug\MinhaLista.pdb
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.VerCliente.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.AlterarFornecedorResponsavel.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.ExcluirFornecedorResponsavel.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.NovoFornecedor_Responsavel.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.MinhaLista.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.HistóricoPedido.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.PedidoPendente.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.VisualizarHistoricoPedido.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.VisualizarPedido.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.AlterraProduto.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.ExcluiProduto.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.NovoProduto.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.Properties.Resources.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.AlterarUsuario.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.ExcluirUsuario.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.NovoUsuario.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Anderson\Desktop\projeto software\MinhaLista2\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\projeto software\MinhaLista2\bin\Debug\MinhaLista.exe.config
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.exe
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.pdb
+F:\projeto software\MinhaLista2\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.VerCliente.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.ExcluirFornecedorResponsavel.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.NovoFornecedor_Responsavel.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.MinhaLista.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.HistóricoPedido.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.VisualizarHistoricoPedido.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.VisualizarPedido.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.ExcluiProduto.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.NovoProduto.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.Properties.Resources.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.ExcluirUsuario.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\projeto software\MinhaLista2\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\projeto software\MinhaLista2\bin\Debug\MinhaLista.exe
+F:\projeto software\MinhaLista2\bin\Debug\MinhaLista.pdb
+I:\projeto software\MinhaLista2\bin\Debug\MinhaLista.exe.config
+I:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.exe
+I:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.pdb
+G:\projeto software\MinhaLista2\bin\Debug\MinhaLista.exe.config
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.exe
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.pdb
+G:\projeto software\MinhaLista2\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.VerCliente.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.ExcluirFornecedorResponsavel.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.NovoFornecedor_Responsavel.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.MinhaLista.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.HistóricoPedido.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.VisualizarHistoricoPedido.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.VisualizarPedido.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.ExcluiProduto.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.NovoProduto.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.Properties.Resources.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.ExcluirUsuario.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\projeto software\MinhaLista2\obj\x86\Debug\GenerateResource.write.1.tlog
+G:\projeto software\MinhaLista2\bin\Debug\MinhaLista.exe
+G:\projeto software\MinhaLista2\bin\Debug\MinhaLista.pdb
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.AlterarFuncionario.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.NovoFuncionario.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.Pedido.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.FornecedorResponsavel.resources
+F:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.Produto.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.FornecedorResponsavel.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.Pedido.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.Produto.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.NovoFuncionario.resources
+G:\projeto software\MinhaLista2\obj\x86\Debug\MinhaLista.Funcionario.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\bin\Debug\MinhaLista.exe.config
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.exe
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.pdb
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\bin\Debug\MinhaLista.exe
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\bin\Debug\MinhaLista.pdb
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.VerCliente.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.FornecedorResponsavel.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.ExcluirFornecedorResponsavel.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.NovoFornecedor_Responsavel.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.MinhaLista.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.HistóricoPedido.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.Pedido.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.VisualizarHistoricoPedido.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.VisualizarPedido.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.Produto.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.ExcluiProduto.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.NovoProduto.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.Properties.Resources.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.Funcionario.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.ExcluirUsuario.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\MinhaLista.NovoFuncionario.resources
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista2\obj\x86\Debug\GenerateResource.write.1.tlog

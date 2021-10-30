@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="acessoDados">
+</Property><Property Name="Solution File" Value="G:\projeto software\acessoBD_incluir\acessoDados.sln">
+</Property><Property Name="User Options File" Value="G:\projeto software\acessoBD_incluir\acessoDados.suo">
+</Property><Property Name="Date" Value="segunda-feira, 18 de junho de 2012">
+</Property><Property Name="Time" Value="19:17">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="acessoDados.sln" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoDados.sln">
+</Event><Event ErrorLevel="0" Project="" Source="acessoDados.suo" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoDados.suo">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\acessoBD_incluir.csproj" Description="Project file successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\acessoBD_incluir.csproj">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\acessoBD_incluir.csproj.user" Description="Project user file successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\acessoBD_incluir.csproj.user">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form1.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form1.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form1.Designer.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form1.Designer.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form2.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form2.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form2.Designer.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form2.Designer.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form3.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form3.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form3.Designer.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form3.Designer.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form4.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form4.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form4.Designer.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form4.Designer.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form5.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form5.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form5.Designer.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form5.Designer.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Program.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Program.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Properties\AssemblyInfo.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Properties\AssemblyInfo.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Properties\Resources.Designer.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Properties\Resources.Designer.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Properties\Settings.Designer.cs" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Properties\Settings.Designer.cs">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Properties\Settings.settings" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Properties\Settings.settings">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form1.resx" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form1.resx">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form2.resx" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form2.resx">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form3.resx" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form3.resx">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form4.resx" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form4.resx">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Form5.resx" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Form5.resx">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\Properties\Resources.resx" Description="File successfully backed up as G:\projeto software\acessoBD_incluir\Backup\acessoBD_incluir\Properties\Resources.resx">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\acessoBD_incluir.csproj" Description="Project converted successfully">
+</Event><Event ErrorLevel="3" Project="acessoBD_incluir" Source="acessoBD_incluir\acessoBD_incluir.csproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="acessoDados.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="acessoDados.sln" Description="Converted">
+</Event><Event ErrorLevel="0" Project="acessoBD_incluir" Source="acessoBD_incluir\acessoBD_incluir.csproj" Description="Scan complete: Upgrade not required for project files.">
+</Event></UpgradeLog>

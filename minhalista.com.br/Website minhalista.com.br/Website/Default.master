@@ -1,0 +1,239 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Default.master.cs" Inherits="_Default" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Minha Lista</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+    <style type="text/css">
+        .style1
+        {
+            height: 18px;
+        }
+        .style2
+        {
+            width: 187px;
+        }
+        .style3
+        {
+            width: 299px;
+        }
+        .style4
+        {
+            width: 105px;
+        }
+    </style>
+    <script language="javascript" type="text/javascript">
+// <![CDATA[
+
+        function Submit1_onclick() {
+
+        }
+
+// ]]>
+    </script>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="main_container">
+
+	<div id="header">
+        <br/> <br/> <br/> <br/> <br/> <br/> <br/> <br/>
+        <table style="width: 100%;">
+            <tr>
+                <td align="right" class="style1">
+                    
+                    
+                    
+            </tr>
+        </table>
+    </div>
+    
+   <div id="main_content"> 
+   
+            <ul class="menu">
+                        <li><a href="Default.aspx" class="nav">  Página Inicial</a></li>
+                        <li class="divider"></li>
+                        <li><a href="Cadastro.aspx" class="nav">Usuário</a></li>
+                        <li class="divider"></li>
+                        <li><a href="Vantagens.aspx" class="nav">Nossas Vantagens</a></li>
+                        <li class="divider"></li>
+                        <li></li>
+                        <table class="nav">
+                            <tr>
+                                <td align="center" class="style2">
+                                    <asp:Label ID="Label9" runat="server" style="color: #FFFFFF; font-weight: 700" 
+                                        Text="Encontre o que você procura:"></asp:Label>
+                                        
+
+                                </td>
+                                <td align="center" class="style3">
+                                    <asp:TextBox ID="TextBox3" runat="server" Width="289px"></asp:TextBox>
+                                </td>
+                                <td align="center" class="style4">
+                                    <asp:Button ID="Button4" runat="server" Text="Buscar" Width="90px" />
+                                </td>
+                            </tr>
+                        </table>
+                </ul><!-- end of menu tab -->
+
+     
+
+
+    
+     
+   
+            
+   <div class="left_content" align="center">
+    <div class="title_box">Laticínios</div>
+    
+      <ul class="left_menu">
+        <li class="odd"><a href="Manteiga.aspx">Manteiga</a></li>
+        <li class="even"><a href="Iorgute.aspx">Iorgute</a></li>
+         <li class="odd"><a href="Queijo.aspx">Queijo</a></li>
+        <li class="even">
+          <div class="title_box">Doces</div>
+        </li>
+         <li class="odd"><a href="Chocolate.aspx">Chocolate</a></li>
+         <li class="odd"><a href="Cereal.aspx">Cereal</a></li>
+         <li class="odd"><a href="Bala.aspx">Bala</a></li>
+        <li class="even">
+          <div class="title_box">Massas</div>
+        </li>
+         <li class="odd"><a href="Lasanha.aspx">Lasanha</a></li>
+        <li class="even"><a href="Pizza.aspx">Pizza</a></li>
+        <li class="odd"><a href="Macarrao.aspx">Macarrão</a></li>
+         <li class="even">
+           <div class="title_box">Higiene</div>
+         </li>
+         <li class="even"><a href="Sabonete.aspx">Sabonete</a></li>
+         <li class="odd"><a href="Shampoo.aspx">Shampoo</a></li>
+         <li class="even"><a href="Fralda.aspx">Fralda</a></li>
+        <li class="odd"></li>
+      </ul>
+   </div><!-- end of left content --> 
+
+
+
+   <div class="center_content">
+   
+           		<div>
+                       <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+
+                       </asp:ContentPlaceHolder>
+                </div>
+   
+   
+   	            <div class="center_title_bar" align="center">Produtos</div>
+                   
+                   <br /> <br /><br /> <br />
+
+               <div>
+                    <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+                    </asp:ContentPlaceHolder>
+                </div>
+    	 
+   
+   </div><!-- end of center content -->
+
+
+
+ <div class="right_content">
+ 
+      <div class="title_box">Login</div>  
+     <div class="border_box">
+		&nbsp;&nbsp;<table style="width:100%;">
+             <tr>
+                 <td>
+                     <asp:Label ID="Label1" runat="server" Text="Login"></asp:Label>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <asp:TextBox ID="txtUsuario" runat="server"></asp:TextBox>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <asp:Label ID="Label2" runat="server" Text="Senha"></asp:Label>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <asp:TextBox ID="txtSenha" runat="server" AutoCompleteType="Disabled" 
+                         AutoPostBack="True" TextMode="Password"></asp:TextBox>
+                 </td>
+             </tr>
+             <tr>
+                 <td>
+                     <table style="width:100%;">
+                         <tr>
+                             <td>
+                                 <asp:Button ID="Button5" runat="server" onclick="Button5_Click" Text="Entrar" />
+                             </td>
+                             <td>
+                                 <asp:LinkButton ID="LinkButton4" runat="server" onclick="LinkButton4_Click">Cadastre-se</asp:LinkButton>
+                             </td>
+                         </tr>
+                         <tr>
+                             <td>
+                                 <asp:Label ID="lblResposta" runat="server" Text="Label"></asp:Label>
+                             </td>
+                             <td>
+                                 <asp:Label ID="Label10" runat="server" Text="Label"></asp:Label>
+                             </td>
+                         </tr>
+                     </table>
+                 </td>
+             </tr>
+         </table>
+     </div>  
+     
+
+     
+ 
+<div class="shopping_cart">
+       	<div class="title_box">Carrinho de compras</div>
+   	    <p>&nbsp;<table style="width:100%;" align="center">
+            <tr>
+                <td>
+                    <asp:ListBox ID="ListBox1" runat="server" Height="243px" Width="154px">
+                    </asp:ListBox>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Button2" type="button" value="Comprar" disabled="disabled" /></td>
+            </tr>
+            <tr>
+                <td>
+                    <input id="Button3" type="button" value="Ver Lista" /></td>
+            </tr>
+            </table>
+        </p>
+</div>
+ </div><!-- end of right content -->   
+
+
+            
+   </div><!-- end of main content -->
+   
+   
+   
+   <div class="footer">
+   
+
+        <div class="center_footer"><br />
+        &nbsp;</div>
+   </div>                 
+
+
+</div>
+    
+    </form>
+</body>
+</html>

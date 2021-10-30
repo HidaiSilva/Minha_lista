@@ -1,0 +1,196 @@
+ createMicrosoft Windows XP [versão 5.1.2600]
+(C) Copyright 1985-2001 Microsoft Corp.
+
+C:\Documents and Settings\alunos>cd\
+
+C:\>cd "Arquivos de programas"
+
+C:\Arquivos de programas>cd MySQL
+
+C:\Arquivos de programas\MySQL>cd "MySQL Server 5.5"
+
+C:\Arquivos de programas\MySQL\MySQL Server 5.5>cd bin
+
+C:\Arquivos de programas\MySQL\MySQL Server 5.5\bin>dir
+ O volume na unidade C não tem nome.
+ O número de série do volume é 3048-5263
+
+ Pasta de C:\Arquivos de programas\MySQL\MySQL Server 5.5\bin
+
+06/01/2011  10:52    <DIR>          .
+06/01/2011  10:52    <DIR>          ..
+06/01/2011  10:52    <DIR>          debug
+03/12/2010  19:39           146.944 echo.exe
+03/12/2010  19:39         1.306.624 echo.pdb
+03/12/2010  19:42         3.849.216 myisamchk.exe
+03/12/2010  19:42         4.476.928 myisamchk.pdb
+03/12/2010  19:42         3.724.800 myisamlog.exe
+03/12/2010  19:42         4.157.440 myisamlog.pdb
+03/12/2010  19:42         3.765.760 myisampack.exe
+03/12/2010  19:42         4.345.856 myisampack.pdb
+03/12/2010  19:42         3.737.600 myisam_ftdump.exe
+03/12/2010  19:42         4.214.784 myisam_ftdump.pdb
+03/12/2010  19:42         4.094.976 mysql.exe
+03/12/2010  19:42         5.894.144 mysql.pdb
+03/12/2010  19:41         4.023.808 mysqladmin.exe
+03/12/2010  19:41         5.672.960 mysqladmin.pdb
+03/12/2010  19:42         4.122.624 mysqlbinlog.exe
+03/12/2010  19:42         6.164.480 mysqlbinlog.pdb
+03/12/2010  19:41         4.017.664 mysqlcheck.exe
+03/12/2010  19:41         5.640.192 mysqlcheck.pdb
+03/12/2010  19:33        12.338.176 mysqld-debug.exe
+03/12/2010  19:41         8.133.120 mysqld.exe
+03/12/2010  19:41        23.613.440 mysqld.pdb
+03/12/2010  19:41         4.079.104 mysqldump.exe
+03/12/2010  19:41         5.844.992 mysqldump.pdb
+03/12/2010  19:27             6.795 mysqldumpslow.pl
+03/12/2010  19:27            23.749 mysqld_multi.pl
+03/12/2010  19:27            33.148 mysqlhotcopy.pl
+03/12/2010  19:41         4.013.056 mysqlimport.exe
+03/12/2010  19:41         5.672.960 mysqlimport.pdb
+26/08/2010  14:56         2.973.600 MySQLInstanceConfig.exe
+03/12/2010  19:41         4.013.056 mysqlshow.exe
+03/12/2010  19:41         5.623.808 mysqlshow.pdb
+03/12/2010  19:41         4.034.560 mysqlslap.exe
+03/12/2010  19:41         5.771.264 mysqlslap.pdb
+03/12/2010  19:41         6.402.048 mysqltest.pdb
+03/12/2010  19:41         8.930.304 mysqltest_embedded.exe
+03/12/2010  19:41        22.409.216 mysqltest_embedded.pdb
+03/12/2010  19:41         9.180.672 mysql_client_test_embedded.exe
+03/12/2010  19:41        22.450.176 mysql_client_test_embedded.pdb
+03/12/2010  19:27             8.734 mysql_config.pl
+03/12/2010  19:27             4.336 mysql_convert_table_format.pl
+03/12/2010  19:27             9.399 mysql_secure_installation.pl
+03/12/2010  19:41         3.431.936 mysql_tzinfo_to_sql.exe
+03/12/2010  19:41         2.994.176 mysql_tzinfo_to_sql.pdb
+03/12/2010  19:41         3.544.576 mysql_upgrade.exe
+03/12/2010  19:41         3.231.744 mysql_upgrade.pdb
+03/12/2010  19:42         3.452.928 my_print_defaults.exe
+03/12/2010  19:42         3.084.288 my_print_defaults.pdb
+03/12/2010  19:42         3.548.672 perror.exe
+03/12/2010  19:42         3.289.088 perror.pdb
+03/12/2010  19:42         3.443.712 replace.exe
+03/12/2010  19:42         3.100.672 replace.pdb
+03/12/2010  19:42         3.452.416 resolveip.exe
+03/12/2010  19:42         3.084.288 resolveip.pdb
+              53 arquivo(s)    268.585.009 bytes
+               3 pasta(s) 37.575.434.240 bytes disponíveis
+
+C:\Arquivos de programas\MySQL\MySQL Server 5.5\bin>MySQL -u root -p
+Enter password: ******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 1
+Server version: 5.5.8 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2010, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql>
+mysql> create database controle_de_equipamentos;
+Query OK, 1 row affected (0.00 sec)
+
+mysql> use controle_de_equipamentos;
+Database changed
+mysql> create table cadastro_de_equipamentos(codigo int not null auto_increment
+primary key, descricao text not null, marca varchar(10),modelo varchar(10));
+Query OK, 0 rows affected (0.71 sec)
+
+mysql> show tables;
++------------------------------------+
+| Tables_in_controle_de_equipamentos |
++------------------------------------+
+| cadastro_de_equipamentos           |
++------------------------------------+
+1 row in set (0.17 sec)
+
+mysql> create table equipamentos_para_emprestimo(equip_emprestimo varchar(10)not
+ null, codigo_do_equipamento int not null, local varchar(15) not null, estante v
+archar(20)not null, pratileira varchar(20)not null, posicao varchar(10)not null,
+ funcionamento varchar(10)not null,primary key(codigo_do_equipamento));
+Query OK, 0 rows affected (0.10 sec)
+
+mysql> show tables;
++------------------------------------+
+| Tables_in_controle_de_equipamentos |
++------------------------------------+
+| cadastro_de_equipamentos           |
+| equipamentos_para_emprestimo       |
++------------------------------------+
+2 rows in set (0.00 sec)
+
+mysql> create table local(codigo_local int not null, predio varchar(15) not null
+,sala varchar(10)not null, primary key(codigo_local));
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> show tables;
++------------------------------------+
+| Tables_in_controle_de_equipamentos |
++------------------------------------+
+| cadastro_de_equipamentos           |
+| equipamentos_para_emprestimo       |
+| local                              |
++------------------------------------+
+3 rows in set (0.00 sec)
+
+mysql> create table funcionario(codigo_funcionario int not nul, nome varchar(40)
+not null, email varchar(40), ramal int not null, primary key(codigo_funcionario)
+);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near 'nul,
+nome varchar(40)not null, email varchar(40), ramal int not null, primary ke' at
+line 1
+mysql> create table funcionario(codigo_funcionario int not nul, nome varchar(40)
+not null, email varchar(40), ramal int not null, primary key(codigo_funcionario)
+);
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near 'nul,
+nome varchar(40)not null, email varchar(40), ramal int not null, primary ke' at
+line 1
+mysql> create table funcionario(codigo_funcionario int not null, nome varchar(40
+)not null, email varchar(40), ramal int not null, primary key(codigo_funcionario
+));
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> show tables;
++------------------------------------+
+| Tables_in_controle_de_equipamentos |
++------------------------------------+
+| cadastro_de_equipamentos           |
+| equipamentos_para_emprestimo       |
+| funcionario                        |
+| local                              |
++------------------------------------+
+4 rows in set (0.00 sec)
+
+mysql> create table emprestimo(codigo_emprestimo int not null, data_emprestimo d
+ate not null, previsao_de_devolução date not null, data_devolucao date not null,
+ equip_emprestimo varchar(30)not null,funcionario varchar(30) not null, multa va
+rchar(30)not null, primary key(codigo_emprestimo));
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near 'ção d
+ate not null, data_devolucao date not null, equip_emprestimo varchar(30)' at lin
+e 1
+mysql> create table emprestimo(codigo_emprestimo int not null, data_emprestimo d
+ate not null, previsao_de_devolucao date not null, data_devolucao date not null,
+ equip_emprestimo varchar(30)not null,funcionario varchar(30) not null, multa va
+rchar(30)not null, primary key(codigo_emprestimo));
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> show tables;
++------------------------------------+
+| Tables_in_controle_de_equipamentos |
++------------------------------------+
+| cadastro_de_equipamentos           |
+| emprestimo                         |
+| equipamentos_para_emprestimo       |
+| funcionario                        |
+| local                              |
++------------------------------------+
+5 rows in set (0.00 sec)
+
+mysql>

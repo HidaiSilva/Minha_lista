@@ -1,0 +1,189 @@
+create database Hotel_Royale;
+use Hotel_Royale;
+create table Cliente(RG int(11)not null primary key, Nome varchar(50)not null,Endereco varchar(50)not null,Cidade varchar(30)not null,Estado char(2)not null,Telefone char(14)not null, Celular char(14)not null,Email varchar(60)not null);
+create table Diaria(Numero int(11)not null primary key,Dt_Chegada date,Dt_Saida date,RG_Cliente int(11)not null,Numero_Quarto int(11)not null);
+create table Quartos(Numero int(11)not null primary key,Qtde_Camas int(11)not null,Ar_condicionado char(1)not null,Ventilador_Teto char(1)not null,Frigo_bar char(1)not null,Televisao char(1)not null,Tipo char(15)not null);
+create table Movimentacao_Servico(Numero int(11)not null primary key,Data date,Numero_Quarto int(11)not null,Tipo_Servico int(11)not null,Quantidade int(11)not null,Valor decimal(5,2)not null);
+create table Tipo_Servico(Codigo_Servico int(11)not null primary key,Descricao varchar(50)not null);
+alter table Diaria add foreign key(Rg_Cliente) references Cliente(RG);
+alter table Diaria add foreign key(Numero_Quarto) references Quartos(Numero);
+alter table Movimentacao_Servico add foreign key(Numero_Quarto) references Quartos(Numero);
+alter table Movimentacao_Servico add foreign key(Tipo_Servico) references Tipo_Servico(Codigo_Servico);
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(457916383,"Jose Carlos Cunha","Rua das acacias 310","São josé dos  Campos","SP","39657689","97687685","josecun@hotmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(467816511,"Antonio Silva Bastos","Rua dos boiadeiros 230","São josé do Rio Preto","SP","39647689","97987685","antbas@hotmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(497913621,"Amanda Pereira Souza","Rua Meia lua 567","Campos do Jordão","SP","39349889","92357685","amandaper@hotmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(478164122,"Daniel Freitas","Rua Marco Zero 520","Mairiporã","SP","33986989","96757685","danitas@gmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(416135633,"Camila Fernandes","Rua Maira Campos 689","São Paulo","SP","39065389","92459685","camdes@gmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(416266764,"Roberto Anastácio da Silva","Rua das peras 1209","Atibaia","SP","39687659","99709685","robersil@yahoomail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(467368155,"Ruti Oliveira","Rua das Margaridas 45","São josé dos  Campos","SP","39076589","97685043","rutiveira@gmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(438361634,"Amanda Costa Numes","Rua dos pessegos 31","São joâo da Boa Vista","SP","39650287","92098685","costnanda@hotmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(429125143,"Shirlei Oliveira Rodrigues","Rua 7 de setembro 77","São Carlos","SP","39655378","92908685","shirgues@gmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(447636399,"Viera dos Santos","Rua 12 de novembro 356","Ubatuba","SP","39650897","90391685","virtos@hotmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(478117117,"Ana Maria Rosa","Rua 32 de Março 98","Santa Maria","SP","39650378","97106785","marros@hotmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(467363181,"Anderson Silva","Rua São Miguel Arcanjo 89","São Francisco Xavier","SP","39659340","97680976","anderval@gmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(498111111,"Ziraldo Pereira","Rua Coronel Monteiro 387","São josé dos  Campos","SP","39650967","97123485","ziralra@gmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(426333111,"Sabino Marconini","Rua do Martinez Santos  837","Caraguatatuba","MG","39657649","97120965","sabimar@yahoomail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(447113666,"Claudia Linda Ferreira","Rua Marjos Dominngues 806","Bragança Paulista","SP","39603817","97120923","claufer@hotmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(447316381,"Aline Ferraz ","Rua dos Astronautas 1108","São josé dos  Campos","SP","39653324","97194585","alinaz@gmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(438111572,"Nair Belo","Avenida Paulista 387","São Paulo","SP","39605436","99800485","nairbel@hotmail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(444514646,"Hirnaldo Costiguara","Rua Jacinalra 1001","Orlinda","RE","39650967","97123485","hirguara@yahoomail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(446135151,"Tatiana Silva","Rua Florada 1 387","São Judas","MA","39349067","99067485","tatva@yahoomail.com.br");
+insert into Cliente(RG,Nome,Endereco,Cidade,Estado,Telefone,Celular,Email) values(447237633,"Célia Campos","Rua Coronel Masillae","São Luiz","BA","39653425","97128945","celpos@hotmail.com.br");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(1,1,"S","N","S","N","Super Luxo");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(2,2,"S","S","S","S","Standard");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(3,1,"S","S","S","S","Lua de Mel");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(4,2,"N","S","S","N","Lua de Mel");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(5,1,"S","S","S","S","Standard");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(6,1,"S","S","S","N","Lua de Mel");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(7,1,"N","N","S","N","Super Luxo");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(8,1,"N","N","N","N","Standard");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(9,1,"N","N","S","S","Super Luxo");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(10,2,"N","N","S","S","Standard");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(11,1,"S","S","S","S","Lua de Mel");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(12,2,"N","S","S","N","Standard");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(13,1,"S","S","S","S","Lua de Mel");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(14,1,"S","S","S","N","Lua de Mel");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(15,1,"N","N","S","N","Standard");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(16,1,"N","N","S","S","Lua de Mel");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(17,2,"N","N","S","S","Super Luxo");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(18,1,"S","S","S","S","Standard");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(19,2,"N","S","S","N","Super luxo");
+insert into Quartos(Numero,Qtde_Camas,Ar_condicionado,Ventilador_Teto,Frigo_bar,Televisao,Tipo) values(20,1,"S","S","S","S","Standard");
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(1,"2011-05-17","2011-06-22",457916383,1);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(2,"2011-06-29","2011-07-09",467816511,2);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(3,"2011-03-14","2011-09-04",497913621,3);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(4,"2011-03-13","2011-09-21",478164122,4);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(5,"2011-05-06","2011-07-22",416135633,5);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(6,"2011-05-17","2011-06-22",416266764,6);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(7,"2011-08-18","2011-09-29",467368155,7);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(8,"2011-03-06","2011-06-12",438361634,8);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(9,"2011-05-17","2011-06-22",429125143,9);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(10,"2011-03-07","2011-06-22",447636399,10);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(11,"2011-04-07","2011-08-22",478117117,11);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(12,"2011-03-18","2011-05-23",467363181,12);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(13,"2011-04-07","2011-05-02",498111111,13);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(14,"2011-03-04","2011-04-12",426333111,14);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(15,"2011-06-13","2011-09-15",447113666,15);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(16,"2011-03-17","2011-05-27",447316381,16);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(17,"2011-01-17","2011-03-28",438111572,17);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(18,"2011-02-17","2011-04-21",444514646,18);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(19,"2011-08-17","2011-09-27",446135151,19);
+insert into Diaria(Numero,Dt_Chegada,Dt_Saida,RG_Cliente,Numero_Quarto) values(20,"2011-09-17","2011-09-28",447237633,20);
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(1,"Camareira");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(2,"Camareira,Motorista");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(3,"Camareira,Baby syster");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(4,"Camareira,Motorista,Acesso a piscina");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(5,"Camareira,Acesso a piscina");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(6,"Camareira,Motorista,Casas de show");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(7,"Camareira,Baby syster,Motorista,Passeios");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(8,"Camareira,Motorista,Salão de Reunião");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(9,"Camareira");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(10,"Camareira,Motorista");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(11,"Camareira,Baby syster");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(12,"Camareira,Motorista,Acesso a piscina");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(13,"Camareira,Acesso a piscina");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(14,"Camareira,Motorista,Casas de show");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(15,"Camareira,Baby syster,Motorista,Passeios");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(16,"Camareira,Motorista,Salão de Reunião");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(17,"Camareira");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(18,"Camareira,Motorista");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(19,"Camareira,Baby syster");
+insert into Tipo_Servico(Codigo_Servico,Descricao) values(20,"Camareira,Motorista,Acesso a piscina");
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(1,"2011-06-11",1,1,2,445);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(2,"2011-07-14",2,2,3,800);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(3,"2011-05-11",3,3,2,978);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(4,"2011-08-14",4,4,3,723);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(5,"2011-06-11",5,5,2,412);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(6,"2011-07-13",6,6,3,812);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(7,"2011-05-17",7,7,2,923);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(8,"2011-08-19",8,8,3,778);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(9,"2011-06-11",9,9,2,409);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(10,"2011-07-14",10,10,3,878);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(11,"2011-05-11",11,11,2,909);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(12,"2011-08-14",12,12,3,715);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(13,"2011-06-11",13,13,2,414);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(14,"2011-07-13",14,14,3,890);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(15,"2011-05-17",15,15,2,956);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(16,"2011-08-19",16,16,3,765);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(17,"2011-08-14",17,17,3,709);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(18,"2011-06-11",18,18,2,434);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(19,"2011-07-13",19,19,3,824);
+insert into Movimentacao_Servico(Numero,Data,Numero_Quarto,Tipo_Servico,Quantidade,Valor) values(20,"2011-05-17",20,20,2,976);
+select Cliente.Nome,Cliente.Telefone,Diaria.Dt_Chegada,Diaria.Dt_Saida,Diaria.Numero_Quarto,Quartos.Tipo from Cliente,Diaria,Quartos where Cliente.RG=Diaria.RG_Cliente and Diaria.Numero_Quarto=Quartos.Numero;
+select Cliente.Nome,Movimentacao_Servico.Data,Movimentacao_Servico.Quantidade,Movimentacao_Servico.Valor from Cliente,Diaria,Quartos,Movimentacao_Servico where Cliente.RG=Diaria.RG_Cliente and Diaria.Numero_Quarto=Quartos.Numero and Quartos.Numero=Movimentacao_Servico.Numero_Quarto;
+select Cliente.Nome from Cliente,Diaria,Quartos where Cliente.RG=Diaria.RG_Cliente and Diaria.Numero_Quarto=Quartos.Numero and Quartos.Tipo="Super Luxo";
+select Cliente.Nome,Movimentacao_Servico.Valor from cliente,Movimentacao_servico,Quartos,Diaria where Cliente.RG=Diaria.RG_Cliente and Diaria.Numero_Quarto=Quartos.Numero and Quartos.Numero=Movimentacao_Servico.Numero_Quarto;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

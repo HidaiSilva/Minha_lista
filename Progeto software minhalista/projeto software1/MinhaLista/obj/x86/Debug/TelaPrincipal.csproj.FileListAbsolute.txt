@@ -1,0 +1,2 @@
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.exe
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.pdb

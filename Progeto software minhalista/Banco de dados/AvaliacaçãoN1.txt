@@ -1,0 +1,300 @@
+06/01/2011  10:52    <DIR>          .
+06/01/2011  10:52    <DIR>          ..
+06/01/2011  10:52    <DIR>          debug
+03/12/2010  19:39           146.944 echo.exe
+03/12/2010  19:39         1.306.624 echo.pdb
+03/12/2010  19:42         3.849.216 myisamchk.exe
+03/12/2010  19:42         4.476.928 myisamchk.pdb
+03/12/2010  19:42         3.724.800 myisamlog.exe
+03/12/2010  19:42         4.157.440 myisamlog.pdb
+03/12/2010  19:42         3.765.760 myisampack.exe
+03/12/2010  19:42         4.345.856 myisampack.pdb
+03/12/2010  19:42         3.737.600 myisam_ftdump.exe
+03/12/2010  19:42         4.214.784 myisam_ftdump.pdb
+03/12/2010  19:42         4.094.976 mysql.exe
+03/12/2010  19:42         5.894.144 mysql.pdb
+03/12/2010  19:41         4.023.808 mysqladmin.exe
+03/12/2010  19:41         5.672.960 mysqladmin.pdb
+03/12/2010  19:42         4.122.624 mysqlbinlog.exe
+03/12/2010  19:42         6.164.480 mysqlbinlog.pdb
+03/12/2010  19:41         4.017.664 mysqlcheck.exe
+03/12/2010  19:41         5.640.192 mysqlcheck.pdb
+03/12/2010  19:33        12.338.176 mysqld-debug.exe
+03/12/2010  19:41         8.133.120 mysqld.exe
+03/12/2010  19:41        23.613.440 mysqld.pdb
+03/12/2010  19:41         4.079.104 mysqldump.exe
+03/12/2010  19:41         5.844.992 mysqldump.pdb
+03/12/2010  19:27             6.795 mysqldumpslow.pl
+03/12/2010  19:27            23.749 mysqld_multi.pl
+03/12/2010  19:27            33.148 mysqlhotcopy.pl
+03/12/2010  19:41         4.013.056 mysqlimport.exe
+03/12/2010  19:41         5.672.960 mysqlimport.pdb
+26/08/2010  14:56         2.973.600 MySQLInstanceConfig.exe
+03/12/2010  19:41         4.013.056 mysqlshow.exe
+03/12/2010  19:41         5.623.808 mysqlshow.pdb
+03/12/2010  19:41         4.034.560 mysqlslap.exe
+03/12/2010  19:41         5.771.264 mysqlslap.pdb
+03/12/2010  19:41         6.402.048 mysqltest.pdb
+03/12/2010  19:41         8.930.304 mysqltest_embedded.exe
+03/12/2010  19:41        22.409.216 mysqltest_embedded.pdb
+03/12/2010  19:41         9.180.672 mysql_client_test_embedded.exe
+03/12/2010  19:41        22.450.176 mysql_client_test_embedded.pdb
+03/12/2010  19:27             8.734 mysql_config.pl
+03/12/2010  19:27             4.336 mysql_convert_table_format.pl
+03/12/2010  19:27             9.399 mysql_secure_installation.pl
+03/12/2010  19:41         3.431.936 mysql_tzinfo_to_sql.exe
+03/12/2010  19:41         2.994.176 mysql_tzinfo_to_sql.pdb
+03/12/2010  19:41         3.544.576 mysql_upgrade.exe
+03/12/2010  19:41         3.231.744 mysql_upgrade.pdb
+03/12/2010  19:42         3.452.928 my_print_defaults.exe
+03/12/2010  19:42         3.084.288 my_print_defaults.pdb
+03/12/2010  19:42         3.548.672 perror.exe
+03/12/2010  19:42         3.289.088 perror.pdb
+03/12/2010  19:42         3.443.712 replace.exe
+03/12/2010  19:42         3.100.672 replace.pdb
+03/12/2010  19:42         3.452.416 resolveip.exe
+03/12/2010  19:42         3.084.288 resolveip.pdb
+              53 arquivo(s)    268.585.009 bytes
+               3 pasta(s) 38.711.369.728 bytes disponíveis
+
+C:\Arquivos de programas\MySQL\MySQL Server 5.5\bin>MySQL -u root -p
+Enter password: ******
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 6
+Server version: 5.5.8 MySQL Community Server (GPL)
+
+Copyright (c) 2000, 2010, Oracle and/or its affiliates. All rights reserved.
+
+Oracle is a registered trademark of Oracle Corporation and/or its
+affiliates. Other names may be trademarks of their respective
+owners.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+mysql> create database Gerenciamento_de_contas_Bancarias;
+Query OK, 1 row affected (0.02 sec)
+
+mysql> use Gerenciamente_de_contas_Bancarias;
+Database changed
+mysql> create table cadastro_da_conta(Numero_da_conta int(10)not null auto_incre
+ment primary key,Nome varchar(50)not null,Email varchar(60)not null,Banco varcha
+r(50),Agencia varchar(25), Telefone varchar(14)not null);
+ERROR 1050 (42S01): Table 'cadastro_da_conta' already exists
+mysql> create table cadastro_de_conta(Numero_da_conta int(10)not null auto_incre
+ment primary key,Nome varchar(50)not null,Email varchar(60)not null,Banco varcha
+r(50),Agencia varchar(25), Telefone varchar(14)not null);
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> create table tipo_de_movimentacao(codigo int(10)not null auto_increment p
+rimary key,descricao varchar(40)not null,Tipo char(1)not null);
+Query OK, 0 rows affected (0.06 sec)
+
+mysql> create table Movimento_da_conta(Numero_da_conta int(10)not null,Tipo_de_M
+ovimentacao int(10)not null,Valor double(9,2)not null, Data date not null);
+Query OK, 0 rows affected (0.08 sec)
+
+mysql> insert into cadastro_de_conta(Numero_da_conta,Nome,Email,Banco,Agencia,Te
+lefone) values(001,"Ana Claudia Santos","ana@hotmail.com","Banco do Brasil","523
+4","39274856");
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into cadastro_de_conta(Numero_da_conta,Nome,Email,Banco,Agencia,Te
+lefone) values(001,"José da Silva","Jose@hotmail.com","Caixa","7856","39276459")
+;
+ERROR 1062 (23000): Duplicate entry '1' for key 'PRIMARY'
+mysql> insert into cadastro_de_conta(Numero_da_conta,Nome,Email,Banco,Agencia,Te
+lefone) values(002,"José da Silva","Jose@hotmail.com","Caixa","7856","39276459")
+;
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into cadastro_de_conta(Numero_da_conta,Nome,Email,Banco,Agencia,Te
+lefone) values(003,"João Mendes Costa","mentescosta@hotmail.com","Itau","9864","
+39271209");
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into tipo_de_movimentacao(codigo,descricao,Tipo) values(1,"Pagamen
+to de conta Telefonica","D");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into tipo_de_movimentacao(codigo,descricao,Tipo) values(2,"Pagamen
+to de conta Luz","D");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into tipo_de_movimentacao(codigo,descricao,Tipo) values(3,"Pagamen
+to de Financiamento do imovel","D");
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into tipo_de_movimentacao(codigo,descricao,Tipo) values(4,"Pagamen
+to de Financiamento do automovel","D");
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into tipo_de_movimentacao(codigo,descricao,Tipo) values(5,"Pagamen
+to de conta de agua","D");
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into tipo_de_movimentacao(codigo,descricao,Tipo) values(6,"Compra
+de sapatos","C");
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into tipo_de_movimentacao(codigo,descricao,Tipo) values(7,"Compra
+de alimentos","C");
+Query OK, 1 row affected (0.09 sec)
+
+mysql> insert into tipo_de_movimentacao(codigo,descricao,Tipo) values(8,"Compra
+de utencilios domesticos","C");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into tipo_de_movimentacao(codigo,descricao,Tipo) values(9,"Compra
+de produtos de limpeza","C");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into tipo_de_movimentacao(codigo,descricao,Tipo) values(10,"Compra
+ de Material escolar","C");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(1,1,"670,00","2011-12-23");
+ERROR 1265 (01000): Data truncated for column 'Valor' at row 1
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(1,1,670,"2011-12-23");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(2,2,345,"2011-07-17");
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(3,3,758,"2011-05-02");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(4,4,987,"2011-06-11");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(5,5,234,"2011-12-23");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(6,6,765,"2011-07-02");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(7,7,723,"2011-05-01");
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(8,8,142,"2011-06-07");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(9,9,670,"2011-12-23");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(10,10,247,"2011-07-13");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(11,11,382,"2011-05-14");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(12,12,968,"2011-06-25");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(13,13,257,"2011-12-28");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(14,14,379,"2011-07-04");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(15,15,684,"2011-05-07");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(16,16,125,"2011-06-09");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(17,12,968,"2011-06-25");
+Query OK, 1 row affected (0.00 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(18,13,257,"2011-12-28");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(19,14,379,"2011-07-04");
+Query OK, 1 row affected (0.02 sec)
+
+mysql> insert into Movimento_da_conta(Numero_da_Conta,Tipo_de_Movimentacao,Valor
+,Data) values(20,20,614,"2011-05-28");
+Query OK, 1 row affected (0.01 sec)
+
+mysql> select*from Movimento_da_conta where valor>500;
++-----------------+----------------------+--------+------------+
+| Numero_da_conta | Tipo_de_Movimentacao | Valor  | Data       |
++-----------------+----------------------+--------+------------+
+|               1 |                    1 | 670.00 | 2011-12-23 |
+|               3 |                    3 | 758.00 | 2011-05-02 |
+|               4 |                    4 | 987.00 | 2011-06-11 |
+|               6 |                    6 | 765.00 | 2011-07-02 |
+|               7 |                    7 | 723.00 | 2011-05-01 |
+|               9 |                    9 | 670.00 | 2011-12-23 |
+|              12 |                   12 | 968.00 | 2011-06-25 |
+|              15 |                   15 | 684.00 | 2011-05-07 |
+|              17 |                   12 | 968.00 | 2011-06-25 |
+|              20 |                   20 | 614.00 | 2011-05-28 |
++-----------------+----------------------+--------+------------+
+10 rows in set (0.05 sec)
+
+mysql> select*from tipo_de_movimentacao where descricao;
+Empty set, 10 warnings (0.00 sec)
+
+mysql> show table;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near '' at
+line 1
+mysql> show tables;
++---------------------------------------------+
+| Tables_in_gerenciamente_de_contas_bancarias |
++---------------------------------------------+
+| cadastro_da_conta                           |
+| cadastro_de_conta                           |
+| movimento_da_conta                          |
+| tipo_de_movimentacao                        |
++---------------------------------------------+
+4 rows in set (0.06 sec)
+
+mysql> select*from Movimento_da_conta;
++-----------------+----------------------+--------+------------+
+| Numero_da_conta | Tipo_de_Movimentacao | Valor  | Data       |
++-----------------+----------------------+--------+------------+
+|               1 |                    1 | 670.00 | 2011-12-23 |
+|               2 |                    2 | 345.00 | 2011-07-17 |
+|               3 |                    3 | 758.00 | 2011-05-02 |
+|               4 |                    4 | 987.00 | 2011-06-11 |
+|               5 |                    5 | 234.00 | 2011-12-23 |
+|               6 |                    6 | 765.00 | 2011-07-02 |
+|               7 |                    7 | 723.00 | 2011-05-01 |
+|               8 |                    8 | 142.00 | 2011-06-07 |
+|               9 |                    9 | 670.00 | 2011-12-23 |
+|              10 |                   10 | 247.00 | 2011-07-13 |
+|              11 |                   11 | 382.00 | 2011-05-14 |
+|              12 |                   12 | 968.00 | 2011-06-25 |
+|              13 |                   13 | 257.00 | 2011-12-28 |
+|              14 |                   14 | 379.00 | 2011-07-04 |
+|              15 |                   15 | 684.00 | 2011-05-07 |
+|              16 |                   16 | 125.00 | 2011-06-09 |
+|              17 |                   12 | 968.00 | 2011-06-25 |
+|              18 |                   13 | 257.00 | 2011-12-28 |
+|              19 |                   14 | 379.00 | 2011-07-04 |
+|              20 |                   20 | 614.00 | 2011-05-28 |
++-----------------+----------------------+--------+------------+
+20 rows in set (0.00 sec)
+
+mysql>

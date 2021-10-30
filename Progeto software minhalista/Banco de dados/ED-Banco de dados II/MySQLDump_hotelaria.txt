@@ -1,0 +1,173 @@
+-- MySQL dump 10.13  Distrib 5.5.8, for Win32 (x86)
+--
+-- Host: localhost    Database: hotelaria
+-- ------------------------------------------------------
+-- Server version	5.5.8
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `cliente`
+--
+
+DROP TABLE IF EXISTS `cliente`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `cliente` (
+  `RG` int(11) NOT NULL,
+  `Nome` varchar(50) NOT NULL,
+  `Endereco` varchar(50) NOT NULL,
+  `Cidade` varchar(30) NOT NULL,
+  `Estado` char(2) NOT NULL,
+  `Telefone` char(14) NOT NULL,
+  `Celular` char(14) NOT NULL,
+  `Email` varchar(60) NOT NULL,
+  PRIMARY KEY (`RG`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `cliente`
+--
+
+LOCK TABLES `cliente` WRITE;
+/*!40000 ALTER TABLE `cliente` DISABLE KEYS */;
+INSERT INTO `cliente` VALUES (416135633,'Camila Fernandes','Rua Maira Campos 689','SÆo Paulo','SP','39065389','92459685','camdes@gmail.com.br'),(416266764,'Roberto Anast cio da Silva','Rua das peras 1209','Atibaia','SP','39687659','99709685','robersil@yahoomail.com.br'),(426333111,'Sabino Marconini','Rua do Martinez Santos  837','Caraguatatuba','MG','39657649','97120965','sabimar@yahoomail.com.br'),(429125143,'Shirlei Oliveira Rodrigues','Rua 7 de setembro 77','SÆo Carlos','SP','39655378','92908685','shirgues@gmail.com.br'),(438111572,'Nair Belo','Avenida Paulista 387','SÆo Paulo','SP','39605436','99800485','nairbel@hotmail.com.br'),(438361634,'Amanda Costa Numes','Rua dos pessegos 31','SÆo joƒo da Boa Vista','SP','39650287','92098685','costnanda@hotmail.com.br'),(444514646,'Hirnaldo Costiguara','Rua Jacinalra 1001','Orlinda','RE','39650967','97123485','hirguara@yahoomail.com.br'),(446135151,'Tatiana Silva','Rua Florada 1 387','SÆo Judas','MA','39349067','99067485','tatva@yahoomail.com.br'),(447113666,'Claudia Linda Ferreira','Rua Marjos Dominngues 806','Bragan‡a Paulista','SP','39603817','97120923','claufer@hotmail.com.br'),(447237633,'C‚lia Campos','Rua Coronel Masillae','SÆo Luiz','BA','39653425','97128945','celpos@hotmail.com.br'),(447316381,'Aline Ferraz ','Rua dos Astronautas 1108','SÆo jos‚ dos  Campos','SP','39653324','97194585','alinaz@gmail.com.br'),(447636399,'Viera dos Santos','Rua 12 de novembro 356','Ubatuba','SP','39650897','90391685','virtos@hotmail.com.br'),(457916383,'Jose Carlos Cunha','Rua das acacias 310','SÆo jos‚ dos  Campos','SP','39657689','97687685','josecun@hotmail.com.br'),(467363181,'Anderson Silva','Rua SÆo Miguel Arcanjo 89','SÆo Francisco Xavier','SP','39659340','97680976','anderval@gmail.com.br'),(467368155,'Ruti Oliveira','Rua das Margaridas 45','SÆo jos‚ dos  Campos','SP','39076589','97685043','rutiveira@gmail.com.br'),(467816511,'Antonio Silva Bastos','Rua dos boiadeiros 230','SÆo jos‚ do Rio Preto','SP','39647689','97987685','antbas@hotmail.com.br'),(478117117,'Ana Maria Rosa','Rua 32 de Mar‡o 98','Santa Maria','SP','39650378','97106785','marros@hotmail.com.br'),(478164122,'Daniel Freitas','Rua Marco Zero 520','MairiporÆ','SP','33986989','96757685','danitas@gmail.com.br'),(497913621,'Amanda Pereira Souza','Rua Meia lua 567','Campos do JordÆo','SP','39349889','92357685','amandaper@hotmail.com.br'),(498111111,'Ziraldo Pereira','Rua Coronel Monteiro 387','SÆo jos‚ dos  Campos','SP','39650967','97123485','ziralra@gmail.com.br');
+/*!40000 ALTER TABLE `cliente` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `diaria`
+--
+
+DROP TABLE IF EXISTS `diaria`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `diaria` (
+  `Numero` int(11) NOT NULL,
+  `Dt_Chegada` date DEFAULT NULL,
+  `Dt_Saida` date DEFAULT NULL,
+  `RG_Cliente` int(11) NOT NULL,
+  `Numero_Quarto` int(11) NOT NULL,
+  PRIMARY KEY (`Numero`),
+  KEY `RG_Cliente` (`RG_Cliente`),
+  KEY `Numero_Quarto` (`Numero_Quarto`),
+  CONSTRAINT `diaria_ibfk_2` FOREIGN KEY (`Numero_Quarto`) REFERENCES `quartos` (`Numero`),
+  CONSTRAINT `diaria_ibfk_1` FOREIGN KEY (`RG_Cliente`) REFERENCES `cliente` (`RG`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `diaria`
+--
+
+LOCK TABLES `diaria` WRITE;
+/*!40000 ALTER TABLE `diaria` DISABLE KEYS */;
+INSERT INTO `diaria` VALUES (1,'2011-05-17','2011-06-22',457916383,1),(2,'2011-06-29','2011-07-09',467816511,2),(3,'2011-03-14','2011-09-04',497913621,3),(4,'2011-03-13','2011-09-21',478164122,4),(5,'2011-05-06','2011-07-22',416135633,5),(6,'2011-05-17','2011-06-22',416266764,6),(7,'2011-08-18','2011-09-29',467368155,7),(8,'2011-03-06','2011-06-12',438361634,8),(9,'2011-05-17','2011-06-22',429125143,9),(10,'2011-03-07','2011-06-22',447636399,10),(11,'2011-04-07','2011-08-22',478117117,11),(12,'2011-03-18','2011-05-23',467363181,12),(13,'2011-04-07','2011-05-02',498111111,13),(14,'2011-03-04','2011-04-12',426333111,14),(15,'2011-06-13','2011-09-15',447113666,15),(16,'2011-03-17','2011-05-27',447316381,16),(17,'2011-01-17','2011-03-28',438111572,17),(18,'2011-02-17','2011-04-21',444514646,18),(19,'2011-08-17','2011-09-27',446135151,19),(20,'2011-09-17','2011-09-28',447237633,20);
+/*!40000 ALTER TABLE `diaria` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `movimentacao_servico`
+--
+
+DROP TABLE IF EXISTS `movimentacao_servico`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `movimentacao_servico` (
+  `Numero` int(11) NOT NULL,
+  `Data` date DEFAULT NULL,
+  `Numero_Quarto` int(11) NOT NULL,
+  `Tipo_Servico` int(11) NOT NULL,
+  `Quantidade` int(11) NOT NULL,
+  `Valor` decimal(5,2) NOT NULL,
+  PRIMARY KEY (`Numero`),
+  KEY `Numero_Quarto` (`Numero_Quarto`),
+  KEY `Tipo_Servico` (`Tipo_Servico`),
+  CONSTRAINT `movimentacao_servico_ibfk_2` FOREIGN KEY (`Tipo_Servico`) REFERENCES `tipo_servico` (`Codigo_Servico`),
+  CONSTRAINT `movimentacao_servico_ibfk_1` FOREIGN KEY (`Numero_Quarto`) REFERENCES `quartos` (`Numero`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `movimentacao_servico`
+--
+
+LOCK TABLES `movimentacao_servico` WRITE;
+/*!40000 ALTER TABLE `movimentacao_servico` DISABLE KEYS */;
+INSERT INTO `movimentacao_servico` VALUES (1,'2011-06-11',1,1,2,445.00),(2,'2011-07-14',2,2,3,800.00),(3,'2011-05-11',3,3,2,978.00),(4,'2011-08-14',4,4,3,723.00),(5,'2011-06-11',5,5,2,412.00),(6,'2011-07-13',6,6,3,812.00),(7,'2011-05-17',7,7,2,923.00),(8,'2011-08-19',8,8,3,778.00),(9,'2011-06-11',9,9,2,409.00),(10,'2011-07-14',10,10,3,878.00),(11,'2011-05-11',11,11,2,909.00),(12,'2011-08-14',12,12,3,715.00),(13,'2011-06-11',13,13,2,414.00),(14,'2011-07-13',14,14,3,890.00),(15,'2011-05-17',15,15,2,956.00),(16,'2011-08-19',16,16,3,765.00),(17,'2011-08-14',17,17,3,709.00),(18,'2011-06-11',18,18,2,434.00),(19,'2011-07-13',19,19,3,824.00),(20,'2011-05-17',20,20,2,976.00);
+/*!40000 ALTER TABLE `movimentacao_servico` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `quartos`
+--
+
+DROP TABLE IF EXISTS `quartos`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `quartos` (
+  `Numero` int(11) NOT NULL,
+  `Qtde_Camas` int(11) NOT NULL,
+  `Ar_condicionado` char(1) NOT NULL,
+  `Ventilador_Teto` char(1) NOT NULL,
+  `Frigo_bar` char(1) NOT NULL,
+  `Televisao` char(1) NOT NULL,
+  `Tipo` char(15) NOT NULL,
+  PRIMARY KEY (`Numero`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `quartos`
+--
+
+LOCK TABLES `quartos` WRITE;
+/*!40000 ALTER TABLE `quartos` DISABLE KEYS */;
+INSERT INTO `quartos` VALUES (1,1,'S','N','S','N','Super Luxo'),(2,2,'S','S','S','S','Standard'),(3,1,'S','S','S','S','Lua de Mel'),(4,2,'N','S','S','N','Lua de Mel'),(5,1,'S','S','S','S','Standard'),(6,1,'S','S','S','N','Lua de Mel'),(7,1,'N','N','S','N','Super Luxo'),(8,1,'N','N','N','N','Standard'),(9,1,'N','N','S','S','Super Luxo'),(10,2,'N','N','S','S','Standard'),(11,1,'S','S','S','S','Lua de Mel'),(12,2,'N','S','S','N','Standard'),(13,1,'S','S','S','S','Lua de Mel'),(14,1,'S','S','S','N','Lua de Mel'),(15,1,'N','N','S','N','Standard'),(16,1,'N','N','S','S','Lua de Mel'),(17,2,'N','N','S','S','Super Luxo'),(18,1,'S','S','S','S','Standard'),(19,2,'N','S','S','N','Super luxo'),(20,1,'S','S','S','S','Standard');
+/*!40000 ALTER TABLE `quartos` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `tipo_servico`
+--
+
+DROP TABLE IF EXISTS `tipo_servico`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `tipo_servico` (
+  `Codigo_Servico` int(11) NOT NULL,
+  `Descricao` varchar(50) NOT NULL,
+  PRIMARY KEY (`Codigo_Servico`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `tipo_servico`
+--
+
+LOCK TABLES `tipo_servico` WRITE;
+/*!40000 ALTER TABLE `tipo_servico` DISABLE KEYS */;
+INSERT INTO `tipo_servico` VALUES (1,'Camareira'),(2,'Camareira,Motorista'),(3,'Camareira,Baby syster'),(4,'Camareira,Motorista,Acesso a piscina'),(5,'Camareira,Acesso a piscina'),(6,'Camareira,Motorista,Casas de show'),(7,'Camareira,Baby syster,Motorista,Passeios'),(8,'Camareira,Motorista,SalÆo de ReuniÆo'),(9,'Camareira'),(10,'Camareira,Motorista'),(11,'Camareira,Baby syster'),(12,'Camareira,Motorista,Acesso a piscina'),(13,'Camareira,Acesso a piscina'),(14,'Camareira,Motorista,Casas de show'),(15,'Camareira,Baby syster,Motorista,Passeios'),(16,'Camareira,Motorista,SalÆo de ReuniÆo'),(17,'Camareira'),(18,'Camareira,Motorista'),(19,'Camareira,Baby syster'),(20,'Camareira,Motorista,Acesso a piscina');
+/*!40000 ALTER TABLE `tipo_servico` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2011-12-12 22:01:09

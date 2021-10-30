@@ -1,0 +1,148 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="CadastroDefault.master.cs" Inherits="CadastroDefault" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Minha Lista</title>
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+
+    <form id="form2" runat="server">
+
+<div id="main_container">
+
+	<div id="header"></div>
+    
+   <div id="main_content"> 
+   
+            <ul class="menu">
+                        <li><a href="Default.aspx" class="nav">  Página Inicial</a></li>
+                        <li class="divider"></li>
+                        <li><a href="Cadastro.aspx" class="nav">Usuário</a></li>
+                        <li class="divider"></li>
+                        <li><a href="Vantagens.aspx" class="nav">Nossas Vantagens</a></li>
+                        <li class="divider"></li>
+                        <li></li>
+                        <table class="nav">
+                            <tr>
+                                <td align="center" class="style4">
+                                    <asp:Label ID="Label9" runat="server" style="color: #FFFFFF; font-weight: 700" 
+                                        Text="Encontre o que você procura:"></asp:Label>
+                                        
+
+                                </td>
+                                <td align="center" class="style3">
+                                    <asp:TextBox ID="TextBox13" runat="server" Width="268px"></asp:TextBox>
+                                </td>
+                                <td align="center">
+                                    <asp:Button ID="Button4" runat="server" Text="Buscar" Width="90px" />
+                                </td>
+                            </tr>
+                        </table>
+                </ul><!-- end of menu tab -->
+
+    
+     
+   
+            
+   <div class="left_content" align="center">
+   <div class="title_box">Área do Usuário</div>
+    
+      <ul class="left_menu">
+        <li class="odd"><a href="Logar.aspx">Logar</a></li>
+        <li class="even"><a href="Cadastro.aspx">Cadastrar</a></li>
+         <li class="odd"><a href="ExcluirCadastro.aspx">Excluir Cadastro</a></li>
+         <li class="even"><a href="Default.aspx">Sair</a></li>
+    
+   </div><!-- end of left content --> 
+
+
+
+   <div class="center_content">
+   
+           		<div class="oferta"></div>
+   
+   
+   	<div class="center_title_bar" align="center">Cadastro</div>
+
+    <br/> <br/> <br/> <br/> <br/>
+
+
+
+       
+       
+        <asp:ContentPlaceHolder id="ContentPlaceHolder1" runat="server">
+        
+        
+        </asp:ContentPlaceHolder>
+    	
+    
+   
+   </div><!-- end of center content -->
+
+
+
+ <div class="right_content">
+ 
+     <div class="border_box">
+		&nbsp;
+         <table style="width:100%;">
+             <tr>
+                 <td>
+                     &nbsp;</td>
+             </tr>
+             <tr>
+                 <td>
+                     &nbsp;</td>
+             </tr>
+             <tr>
+                 <td>
+                     &nbsp;</td>
+             </tr>
+             <tr>
+                 <td>
+                     &nbsp;</td>
+             </tr>
+             <tr>
+                 <td>
+                     <table style="width:100%;">
+                         <tr>
+                             <td>
+                                 &nbsp;</td>
+                         </tr>
+                     </table>
+                 </td>
+             </tr>
+         </table>
+     </div>  
+     
+
+     
+ 
+ </div><!-- end of right content -->   
+
+
+            
+   </div><!-- end of main content -->
+   
+   
+   
+   <div class="footer">
+   
+
+        <div class="center_footer"><br />
+        &nbsp;</div>
+   </div>                 
+
+
+</div>
+<!-- end of main_container -->
+    </form>
+   
+    
+</body>
+</html>

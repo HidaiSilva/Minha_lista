@@ -1,0 +1,372 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{E0E75CA9-D40E-4000-8C4A-FAD5020F6809}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MinhaLista</RootNamespace>
+    <AssemblyName>MinhaLista</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.ReportViewer.Common, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+    <Reference Include="Microsoft.ReportViewer.WinForms, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL" />
+    <Reference Include="Microsoft.VisualBasic" />
+    <Reference Include="MySql.Data, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\MySQL Connector Net 6.4.3\Assemblies\v2.0\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data.Entity, Version=6.4.3.0, Culture=neutral, PublicKeyToken=c5687fc88969c44d, processorArchitecture=MSIL">
+      <HintPath>..\..\MySQL Connector Net 6.4.3\Assemblies\v2.0\MySql.Data.Entity.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration.Install" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fornecedor_responsavel\FornecedorResponsavel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor_responsavel\FornecedorResponsavel.Designer.cs">
+      <DependentUpon>FornecedorResponsavel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor_responsavel\ExcluirFornecedorResponsavel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor_responsavel\ExcluirFornecedorResponsavel.Designer.cs">
+      <DependentUpon>ExcluirFornecedorResponsavel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor_responsavel\NovoFornecedor_Responsavel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor_responsavel\NovoFornecedor_Responsavel.Designer.cs">
+      <DependentUpon>NovoFornecedor_Responsavel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Item\Item.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Item\Item.Designer.cs">
+      <DependentUpon>Item.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="minha_listaDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>minha_listaDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\Funcionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionario\Funcionario.Designer.cs">
+      <DependentUpon>Funcionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\ExcluirUsuario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionario\ExcluirUsuario.Designer.cs">
+      <DependentUpon>ExcluirUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Funcionario\NovoFuncionario.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Funcionario\NovoFuncionario.Designer.cs">
+      <DependentUpon>NovoFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido\HistoricoPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedido\HistoricoPedido.Designer.cs">
+      <DependentUpon>HistoricoPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido\Pedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedido\Pedido.Designer.cs">
+      <DependentUpon>Pedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produto\Produto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produto\Produto.Designer.cs">
+      <DependentUpon>Produto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produto\ExcluiProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produto\ExcluiProduto.Designer.cs">
+      <DependentUpon>ExcluiProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="MinhaLista.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MinhaLista.Designer.cs">
+      <DependentUpon>MinhaLista.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Produto\NovoProduto.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Produto\NovoProduto.Designer.cs">
+      <DependentUpon>NovoProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Cliente\VerCliente.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Cliente\VerCliente.Designer.cs">
+      <DependentUpon>VerCliente.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido\VisualizarHistoricoPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedido\VisualizarHistoricoPedido.Designer.cs">
+      <DependentUpon>VisualizarHistoricoPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Pedido\VisualizarPedido.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Pedido\VisualizarPedido.Designer.cs">
+      <DependentUpon>VisualizarPedido.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fornecedor_responsavel\SelecionarExclusao.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fornecedor_responsavel\SelecionarExclusao.Designer.cs">
+      <DependentUpon>SelecionarExclusao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Splash.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Splash.designer.cs">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="Cliente\VerCliente.resx">
+      <DependentUpon>VerCliente.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor_responsavel\FornecedorResponsavel.resx">
+      <DependentUpon>FornecedorResponsavel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor_responsavel\ExcluirFornecedorResponsavel.resx">
+      <DependentUpon>ExcluirFornecedorResponsavel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor_responsavel\NovoFornecedor_Responsavel.resx">
+      <DependentUpon>NovoFornecedor_Responsavel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Item\Item.resx">
+      <DependentUpon>Item.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MinhaLista.resx">
+      <DependentUpon>MinhaLista.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedido\HistoricoPedido.resx">
+      <DependentUpon>HistoricoPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedido\Pedido.resx">
+      <DependentUpon>Pedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedido\VisualizarHistoricoPedido.resx">
+      <DependentUpon>VisualizarHistoricoPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Pedido\VisualizarPedido.resx">
+      <DependentUpon>VisualizarPedido.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produto\Produto.resx">
+      <DependentUpon>Produto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produto\ExcluiProduto.resx">
+      <DependentUpon>ExcluiProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Produto\NovoProduto.resx">
+      <DependentUpon>NovoProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Funcionario\Funcionario.resx">
+      <DependentUpon>Funcionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionario\ExcluirUsuario.resx">
+      <DependentUpon>ExcluirUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Funcionario\NovoFuncionario.resx">
+      <DependentUpon>NovoFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fornecedor_responsavel\SelecionarExclusao.resx">
+      <DependentUpon>SelecionarExclusao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Splash.resx">
+      <DependentUpon>Splash.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="minha_listaDataSet.xsc">
+      <DependentUpon>minha_listaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="minha_listaDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>minha_listaDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="minha_listaDataSet.xss">
+      <DependentUpon>minha_listaDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\login.jpeg" />
+    <None Include="Resources\imgLogin.jpeg" />
+    <None Include="Imagens\146.ico" />
+    <Content Include="Imagens\alpino.jpg" />
+    <Content Include="Imagens\alpino0.jpg" />
+    <Content Include="Imagens\alpino1.jpg" />
+    <Content Include="Imagens\baladegoma.jpg" />
+    <Content Include="Imagens\balas 3.jpg" />
+    <Content Include="Imagens\balas.jpg" />
+    <Content Include="Imagens\balas2.jpg" />
+    <Content Include="Imagens\bohemia.jpg" />
+    <Content Include="Imagens\bohemia0.jpg" />
+    <Content Include="Imagens\bohemia1.jpg" />
+    <Content Include="Imagens\cereal.jpg" />
+    <Content Include="Imagens\cereal2.jpg" />
+    <Content Include="Imagens\cereal3.jpg" />
+    <Content Include="Imagens\closup.jpg" />
+    <Content Include="Imagens\closup0.jpg" />
+    <Content Include="Imagens\closup1.jpg" />
+    <Content Include="Imagens\ferrero roche.jpg" />
+    <Content Include="Imagens\fralda.jpg" />
+    <Content Include="Imagens\fralda2.jpg" />
+    <Content Include="Imagens\fralda3.jpg" />
+    <Content Include="Imagens\gel.jpg" />
+    <Content Include="Imagens\gel0.jpg" />
+    <Content Include="Imagens\gel1.jpg" />
+    <Content Include="Imagens\gordura.jpg" />
+    <Content Include="Imagens\gordura0.jpg" />
+    <Content Include="Imagens\gordura1.jpg" />
+    <Content Include="Imagens\iorgute1.jpg" />
+    <Content Include="Imagens\iorgute10.jpg" />
+    <Content Include="Imagens\iorgute101.jpg" />
+    <Content Include="Imagens\iorgute2.jpg" />
+    <Content Include="Imagens\iorgute3.jpg" />
+    <Content Include="Imagens\lasanha0.jpg" />
+    <Content Include="Imagens\lasanha1.jpg" />
+    <Content Include="Imagens\lasanha3.jpg" />
+    <Content Include="Imagens\manteiga1.jpg" />
+    <Content Include="Imagens\manteiga2.jpg" />
+    <Content Include="Imagens\manteiga3.jpg" />
+    <Content Include="Imagens\manteiga30.jpg" />
+    <Content Include="Imagens\manteiga33.jpg" />
+    <Content Include="Imagens\nescau ball.jpg" />
+    <Content Include="Imagens\nescau ball0.jpg" />
+    <Content Include="Imagens\nescau ball1.jpg" />
+    <Content Include="Imagens\pepsi.jpg" />
+    <Content Include="Imagens\pepsi0.jpg" />
+    <Content Include="Imagens\pepsi1.jpg" />
+    <Content Include="Imagens\pilao.jpg" />
+    <Content Include="Imagens\pilao0.jpg" />
+    <Content Include="Imagens\pilao1.jpg" />
+    <Content Include="Imagens\pizza0.jpg" />
+    <Content Include="Imagens\pizza1.jpg" />
+    <Content Include="Imagens\pizza12jpg.jpg" />
+    <Content Include="Imagens\queijo 1.jpg" />
+    <Content Include="Imagens\queijo 10.jpg" />
+    <Content Include="Imagens\queijo 101.jpg" />
+    <Content Include="Imagens\queijo 2.jpg" />
+    <Content Include="Imagens\queijo 3.jpg" />
+    <Content Include="Imagens\sabonete.jpg" />
+    <Content Include="Imagens\sabonete2.jpg" />
+    <Content Include="Imagens\sabonete3.jpg" />
+    <Content Include="Imagens\shampoo.jpg" />
+    <Content Include="Imagens\shampoo2.jpg" />
+    <Content Include="Imagens\shampoo3.jpg" />
+    <Content Include="Imagens\tekila.jpg" />
+    <Content Include="Imagens\tekila0.jpg" />
+    <Content Include="Imagens\tekila1.jpg" />
+    <None Include="Imagens\503_32x32.png" />
+    <None Include="Imagens\7831_32x32.png" />
+    <None Include="Imagens\6953_32x32.png" />
+    <None Include="Imagens\8414_128x128.png" />
+    <None Include="Imagens\11292_64x64.png" />
+    <None Include="Imagens\8271_32x32.png" />
+    <None Include="Imagens\7465_32x32.png" />
+    <Content Include="Imagens\People.ico" />
+    <None Include="Imagens\7657_32x32.png" />
+    <None Include="Imagens\8366_32x32.png" />
+    <None Include="Imagens\7662_32x32.png" />
+    <None Include="Imagens\1408_32x32.png" />
+    <None Include="Imagens\Lupa.png" />
+    <None Include="Imagens\PlanodeFundo2.png" />
+    <None Include="Imagens\logoempresa.JPG" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Icones\" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

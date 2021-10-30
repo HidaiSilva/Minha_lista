@@ -1,0 +1,128 @@
+
+mysql> select Cliente.Nome,Cliente.Telefone,Diaria.Dt_Chegada,Diaria.Dt_Saida,Di
+aria.Numero_Quarto,Quartos.Tipo from Cliente,Diaria,Quartos where Cliente.RG=Dia
+ria.RG_Cliente and Diaria.Numero_Quarto=Quartos.Numero;
++----------------------------+----------+------------+------------+-------------
+--+------------+
+| Nome                       | Telefone | Dt_Chegada | Dt_Saida   | Numero_Quart
+o | Tipo       |
++----------------------------+----------+------------+------------+-------------
+--+------------+
+| Camila Fernandes           | 39065389 | 2011-05-06 | 2011-07-22 |
+5 | Standard   |
+| Roberto Anastácio da Silva | 39687659 | 2011-05-17 | 2011-06-22 |
+6 | Lua de Mel |
+| Sabino Marconini           | 39657649 | 2011-03-04 | 2011-04-12 |            1
+4 | Lua de Mel |
+| Shirlei Oliveira Rodrigues | 39655378 | 2011-05-17 | 2011-06-22 |
+9 | Super Luxo |
+| Nair Belo                  | 39605436 | 2011-01-17 | 2011-03-28 |            1
+7 | Super Luxo |
+| Amanda Costa Numes         | 39650287 | 2011-03-06 | 2011-06-12 |
+8 | Standard   |
+| Hirnaldo Costiguara        | 39650967 | 2011-02-17 | 2011-04-21 |            1
+8 | Standard   |
+| Tatiana Silva              | 39349067 | 2011-08-17 | 2011-09-27 |            1
+9 | Super luxo |
+| Claudia Linda Ferreira     | 39603817 | 2011-06-13 | 2011-09-15 |            1
+5 | Standard   |
+| Célia Campos               | 39653425 | 2011-09-17 | 2011-09-28 |            2
+0 | Standard   |
+| Aline Ferraz               | 39653324 | 2011-03-17 | 2011-05-27 |            1
+6 | Lua de Mel |
+| Viera dos Santos           | 39650897 | 2011-03-07 | 2011-06-22 |            1
+0 | Standard   |
+| Jose Carlos Cunha          | 39657689 | 2011-05-17 | 2011-06-22 |
+1 | Super Luxo |
+| Anderson Silva             | 39659340 | 2011-03-18 | 2011-05-23 |            1
+2 | Standard   |
+| Ruti Oliveira              | 39076589 | 2011-08-18 | 2011-09-29 |
+7 | Super Luxo |
+| Antonio Silva Bastos       | 39647689 | 2011-06-29 | 2011-07-09 |
+2 | Standard   |
+| Ana Maria Rosa             | 39650378 | 2011-04-07 | 2011-08-22 |            1
+1 | Lua de Mel |
+| Daniel Freitas             | 33986989 | 2011-03-13 | 2011-09-21 |
+4 | Lua de Mel |
+| Amanda Pereira Souza       | 39349889 | 2011-03-14 | 2011-09-04 |
+3 | Lua de Mel |
+| Ziraldo Pereira            | 39650967 | 2011-04-07 | 2011-05-02 |            1
+3 | Lua de Mel |
++----------------------------+----------+------------+------------+-------------
+--+------------+
+20 rows in set (0.00 sec)
+
+mysql> select Cliente.Nome,Movimentacao_Servico.Data,Movimentacao_Servico.Quanti
+dade,Movimentacao_Servico.Valor from Cliente,Diaria,Quartos,Movimentacao_Servico
+ where Cliente.RG=Diaria.RG_Cliente and Diaria.Numero_Quarto=Quartos.Numero and
+Quartos.Numero=Movimentacao_Servico.Numero_Quarto;
++----------------------------+------------+------------+--------+
+| Nome                       | Data       | Quantidade | Valor  |
++----------------------------+------------+------------+--------+
+| Camila Fernandes           | 2011-06-11 |          2 | 412.00 |
+| Roberto Anastácio da Silva | 2011-07-13 |          3 | 812.00 |
+| Sabino Marconini           | 2011-07-13 |          3 | 890.00 |
+| Shirlei Oliveira Rodrigues | 2011-06-11 |          2 | 409.00 |
+| Nair Belo                  | 2011-08-14 |          3 | 709.00 |
+| Amanda Costa Numes         | 2011-08-19 |          3 | 778.00 |
+| Hirnaldo Costiguara        | 2011-06-11 |          2 | 434.00 |
+| Tatiana Silva              | 2011-07-13 |          3 | 824.00 |
+| Claudia Linda Ferreira     | 2011-05-17 |          2 | 956.00 |
+| Célia Campos               | 2011-05-17 |          2 | 976.00 |
+| Aline Ferraz               | 2011-08-19 |          3 | 765.00 |
+| Viera dos Santos           | 2011-07-14 |          3 | 878.00 |
+| Jose Carlos Cunha          | 2011-06-11 |          2 | 445.00 |
+| Anderson Silva             | 2011-08-14 |          3 | 715.00 |
+| Ruti Oliveira              | 2011-05-17 |          2 | 923.00 |
+| Antonio Silva Bastos       | 2011-07-14 |          3 | 800.00 |
+| Ana Maria Rosa             | 2011-05-11 |          2 | 909.00 |
+| Daniel Freitas             | 2011-08-14 |          3 | 723.00 |
+| Amanda Pereira Souza       | 2011-05-11 |          2 | 978.00 |
+| Ziraldo Pereira            | 2011-06-11 |          2 | 414.00 |
++----------------------------+------------+------------+--------+
+20 rows in set (0.00 sec)
+
+mysql> select Cliente.Nome from Cliente,Diaria,Quartos where Cliente.RG=Diaria.R
+G_Cliente and Diaria.Numero_Quarto=Quartos.Numero and Quartos.Tipo="Super Luxo";
+
++----------------------------+
+| Nome                       |
++----------------------------+
+| Shirlei Oliveira Rodrigues |
+| Nair Belo                  |
+| Tatiana Silva              |
+| Jose Carlos Cunha          |
+| Ruti Oliveira              |
++----------------------------+
+5 rows in set (0.00 sec)
+
+mysql> select Cliente.Nome,Movimentacao_Servico.Valor from cliente,Movimentacao_
+servico,Quartos,Diaria where Cliente.RG=Diaria.RG_Cliente and Diaria.Numero_Quar
+to=Quartos.Numero and Quartos.Numero=Movimentacao_Servico.Numero_Quarto;
++----------------------------+--------+
+| Nome                       | Valor  |
++----------------------------+--------+
+| Camila Fernandes           | 412.00 |
+| Roberto Anastácio da Silva | 812.00 |
+| Sabino Marconini           | 890.00 |
+| Shirlei Oliveira Rodrigues | 409.00 |
+| Nair Belo                  | 709.00 |
+| Amanda Costa Numes         | 778.00 |
+| Hirnaldo Costiguara        | 434.00 |
+| Tatiana Silva              | 824.00 |
+| Claudia Linda Ferreira     | 956.00 |
+| Célia Campos               | 976.00 |
+| Aline Ferraz               | 765.00 |
+| Viera dos Santos           | 878.00 |
+| Jose Carlos Cunha          | 445.00 |
+| Anderson Silva             | 715.00 |
+| Ruti Oliveira              | 923.00 |
+| Antonio Silva Bastos       | 800.00 |
+| Ana Maria Rosa             | 909.00 |
+| Daniel Freitas             | 723.00 |
+| Amanda Pereira Souza       | 978.00 |
+| Ziraldo Pereira            | 414.00 |
++----------------------------+--------+
+20 rows in set (0.00 sec)
+
+mysql>

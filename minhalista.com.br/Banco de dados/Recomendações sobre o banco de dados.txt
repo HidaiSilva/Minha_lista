@@ -1,0 +1,6 @@
+
+                                                                  Recomendações
+
+
+1°- Será necessaria ter instalado o software MySQLAdminstrator para restaurar o backup que é contido nesta pasta para melhor praticidade pois o arquivo do SQL.
+

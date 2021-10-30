@@ -1,0 +1,69 @@
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\bin\Debug\MinhaLista.exe
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\bin\Debug\MinhaLista.pdb
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\ResolveAssemblyReference.cache
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.Properties.Resources.resources
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.TelaInicial.resources
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\GenerateResource.read.1.tlog
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\GenerateResource.write.1.tlog
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.exe
+c:\users\jovino.marcos\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.pdb
+C:\Users\JOVINO.MARCOS\documents\visual studio 2010\Projects\MinhaLista\obj\x86\Debug\MinhaLista.TelasSecundarias.CadastroFornecedor_Responsavel.NovoFornecedor.resources
+H:\MinhaLista\obj\x86\Debug\MinhaLista.exe
+H:\MinhaLista\obj\x86\Debug\MinhaLista.pdb
+H:\MinhaLista\bin\Debug\MinhaLista.exe
+H:\MinhaLista\bin\Debug\MinhaLista.pdb
+H:\MinhaLista\obj\x86\Debug\ResolveAssemblyReference.cache
+H:\MinhaLista\obj\x86\Debug\MinhaLista.Properties.Resources.resources
+H:\MinhaLista\obj\x86\Debug\MinhaLista.TelaInicial.resources
+H:\MinhaLista\obj\x86\Debug\GenerateResource.read.1.tlog
+H:\MinhaLista\obj\x86\Debug\GenerateResource.write.1.tlog
+H:\MinhaLista\obj\x86\Debug\MinhaLista.NovoFornecedor.resources
+G:\MinhaLista\obj\x86\Debug\MinhaLista.exe
+G:\MinhaLista\obj\x86\Debug\MinhaLista.pdb
+G:\MinhaLista\bin\Debug\MinhaLista.exe
+G:\MinhaLista\bin\Debug\MinhaLista.pdb
+G:\MinhaLista\obj\x86\Debug\ResolveAssemblyReference.cache
+G:\MinhaLista\obj\x86\Debug\MinhaLista.NovoFornecedor.resources
+G:\MinhaLista\obj\x86\Debug\MinhaLista.Properties.Resources.resources
+G:\MinhaLista\obj\x86\Debug\MinhaLista.TelaInicial.resources
+G:\MinhaLista\obj\x86\Debug\GenerateResource.read.1.tlog
+G:\MinhaLista\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\MinhaLista\obj\x86\Debug\MinhaLista.exe
+F:\MinhaLista\obj\x86\Debug\MinhaLista.pdb
+F:\MinhaLista\obj\x86\Debug\ResolveAssemblyReference.cache
+F:\MinhaLista\obj\x86\Debug\MinhaLista.NovoFornecedor.resources
+F:\MinhaLista\obj\x86\Debug\MinhaLista.Properties.Resources.resources
+F:\MinhaLista\obj\x86\Debug\MinhaLista.TelaInicial.resources
+F:\MinhaLista\obj\x86\Debug\GenerateResource.read.1.tlog
+F:\MinhaLista\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\MinhaLista\bin\Debug\MinhaLista.exe
+F:\MinhaLista\bin\Debug\MinhaLista.pdb
+E:\MinhaLista\obj\x86\Debug\MinhaLista.exe
+E:\MinhaLista\obj\x86\Debug\MinhaLista.pdb
+F:\MinhaLista\obj\x86\Debug\MinhaLista.Informaçoes_do_cliente.resources
+F:\MinhaLista\obj\x86\Debug\MinhaLista.Login.resources
+F:\MinhaLista\obj\x86\Debug\MinhaLista.Splash.resources
+H:\MinhaLista\bin\Debug\MySql.Data.dll
+H:\MinhaLista\obj\x86\Debug\MinhaLista.Informaçoes_do_cliente.resources
+H:\MinhaLista\obj\x86\Debug\MinhaLista.Login.resources
+H:\MinhaLista\obj\x86\Debug\MinhaLista.Splash.resources
+G:\MinhaLista\obj\x86\Debug\MinhaLista.Informaçoes_do_cliente.resources
+G:\MinhaLista\obj\x86\Debug\MinhaLista.Login.resources
+G:\MinhaLista\obj\x86\Debug\MinhaLista.Splash.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\obj\x86\Debug\MinhaLista.exe
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\obj\x86\Debug\MinhaLista.pdb
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\bin\Debug\MinhaLista.exe
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\bin\Debug\MinhaLista.pdb
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\obj\x86\Debug\ResolveAssemblyReference.cache
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\obj\x86\Debug\MinhaLista.Informaçoes_do_cliente.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\obj\x86\Debug\MinhaLista.Login.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\obj\x86\Debug\MinhaLista.Splash.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\obj\x86\Debug\MinhaLista.NovoFornecedor.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\obj\x86\Debug\MinhaLista.Properties.Resources.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\obj\x86\Debug\MinhaLista.TelaInicial.resources
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\obj\x86\Debug\GenerateResource.read.1.tlog
+C:\Users\Anderson\Desktop\projeto software\MinhaLista\obj\x86\Debug\GenerateResource.write.1.tlog
+F:\projeto software\MinhaLista\obj\x86\Debug\MinhaLista.exe
+F:\projeto software\MinhaLista\obj\x86\Debug\MinhaLista.pdb
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista\obj\x86\Debug\MinhaLista.exe
+C:\Users\Anderson\Desktop\projeto software1\MinhaLista\obj\x86\Debug\MinhaLista.pdb

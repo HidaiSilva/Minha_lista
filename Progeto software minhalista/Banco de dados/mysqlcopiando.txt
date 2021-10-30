@@ -1,0 +1,184 @@
+
+
+
+
+copiar table do mysql
+
+
+DROP TABLE IF EXISTS BancoNovo.Teste;
+CREATE TABLE tabela_nova SELECT * FROM tabela_antiga;
+
+
+
+
+
+
+
+
+
+INSERT INTO produtos_entregues SELECT * FROM  where status="entregue" ;
+
+Hoje precisei copiar dados de uma tabela para outra. Mas como fazer isso facilmente atraves de linha de comando? … vou dizer, mas antes vamos as premissas:
+
+* Não quero registros repetidos, neste caso o e-mail
+
+* Não quero todos os dados da tabela Servidor (onde vou pegar os dados).
+
+* So quero os e-mails começados com a letra “a”.
+
+Então, vamos a dica:
+
+1
+ INSERT INTO tabela2  (nome, email) SELECT nome, email FROM tabela1 WHERE (email LIKE 'a%') GROUP BY email 
+Logico que os dados acima são fictícios, mas funciona. A explicação basica é:
+
+1- O comando INSERT como outro qualquer na tabela2 (a que vai receber os dados)
+
+2- Em seguida vem um SELECT normal tambem, com os campos que desejo importar na mesma ordem que eu coloquei para inserir.
+
+3- O WHERE para a condição dos e-mails começando com a letra “a”.
+
+4- O GROUP BY para não repetir os e-mails. Poderia usar tambem o DISTINCT ou similar, fica a critério do fregues.
+
+Se tiver alguma duvida sobre MySQL pode perguntar, se eu souber irei responder com certeza.
+
+Welcome to the MySQL monitor.  Commands end with ; or \g.
+Your MySQL connection id is 42
+Server version: 5.1.32-community MySQL Community Server (GPL)
+
+Type 'help;' or '\h' for help. Type '\c' to clear the buffer.
+
+mysql> use minha_base;
+Database changed
+mysql> desc produtos;
++------------+------------------+------+-----+---------+----------------+
+| Field      | Type             | Null | Key | Default | Extra          |
++------------+------------------+------+-----+---------+----------------+
+| id_produto | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| nome       | varchar(45)      | NO   |     | NULL    |                |
+| status     | varchar(15)      | NO   |     | NULL    |                |
++------------+------------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+mysql> desc produtos_entregues;
++------------+------------------+------+-----+---------+----------------+
+| Field      | Type             | Null | Key | Default | Extra          |
++------------+------------------+------+-----+---------+----------------+
+| id_produto | int(10) unsigned | NO   | PRI | NULL    | auto_increment |
+| nome       | varchar(45)      | NO   |     | NULL    |                |
+| status     | varchar(15)      | NO   |     | NULL    |                |
++------------+------------------+------+-----+---------+----------------+
+3 rows in set (0.00 sec)
+
+mysql> insert into produtos values(0,'arroz','entregue');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into produtos values(0,'feijão','a_entregue');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> insert into produtos values(0,'macarrão','entregue');
+Query OK, 1 row affected (0.05 sec)
+
+mysql> insert into produtos values(0,'açucar','a_entregue');
+Query OK, 1 row affected (0.03 sec)
+
+mysql> select*from produtos;
++------------+----------+------------+
+| id_produto | nome     | status     |
++------------+----------+------------+
+|          1 | arroz    | entregue   |
+|          2 | feijão   | a_entregue |
+|          3 | macarrão | entregue   |
+|          4 | açucar   | a_entregue |
++------------+----------+------------+
+4 rows in set (0.00 sec)
+
+mysql>
+mysql>
+mysql> INSERT INTO produtos_entregues SELECT * FROM  where status="entregue" ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near 'where
+ status="entregue"' at line 1
+mysql> INSERT INTO produtos_entregues SELECT * FROM  where status='entregue' ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near 'where
+ status='entregue'' at line 1
+mysql> INSERT INTO produtos_entregues SELECT*FROM produtos,produtos,entregues  w
+here status='entregue' ;
+ERROR 1066 (42000): Not unique table/alias: 'produtos'
+mysql> INSERT INTO produtos_entregues SELECT*FROM produtos,produtos_entregues  w
+here status='entregue' ;
+ERROR 1052 (23000): Column 'status' in where clause is ambiguous
+mysql> INSERT INTO produtos_entregues SELECT*FROM produtos,produtos_entregues  w
+here status like='entregue' ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near '='ent
+regue'' at line 1
+mysql> INSERT INTO produtos_entregues SELECT id_produto,nome,status FROM produto
+s,produtos_entregues  where status='entregue' ;
+ERROR 1052 (23000): Column 'id_produto' in field list is ambiguous
+mysql> INSERT INTO produtos_entregues SELECT id_produto,nome,status FROM produto
+s,produtos_entregues  where like status='entregue' ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near 'like
+status='entregue'' at line 1
+mysql> INSERT INTO produtos_entregues SELECT id_produto,nome,status FROM produto
+s  where like status='entregue' ;
+ERROR 1064 (42000): You have an error in your SQL syntax; check the manual that
+corresponds to your MySQL server version for the right syntax to use near 'like
+status='entregue'' at line 1
+
+
+
+
+mysql> INSERT INTO produtos_entregues(id_produto,nome,status) SELECT id_produto,
+nome,status FROM produtos where(status like 'entregue') group by id_produto;
+
+
+
+
+
+
+Query OK, 2 rows affected (0.06 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> select*from produtos_entregues;
++------------+----------+----------+
+| id_produto | nome     | status   |
++------------+----------+----------+
+|          1 | arroz    | entregue |
+|          3 | macarrão | entregue |
++------------+----------+----------+
+2 rows in set (0.00 sec)
+
+mysql> INSERT INTO produtos_entregues(id_produto,nome,status) SELECT id_produto,
+nome,status FROM produtos where(status like 'a_entregue') group by id_produto;
+Query OK, 2 rows affected (0.02 sec)
+Records: 2  Duplicates: 0  Warnings: 0
+
+mysql> select*from produtos_entregues;
++------------+----------+------------+
+| id_produto | nome     | status     |
++------------+----------+------------+
+|          1 | arroz    | entregue   |
+|          2 | feijão   | a_entregue |
+|          3 | macarrão | entregue   |
+|          4 | açucar   | a_entregue |
++------------+----------+------------+
+4 rows in set (0.00 sec)
+
+mysql>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
